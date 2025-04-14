@@ -8,9 +8,10 @@ url = "http://quotes.toscrape.com/"
 response = requests.get(url)
 
 # Check if the request was successful
-if response.status_code == 200:
+
+if response.status_code == 200: 
     print("Successfully accessed the website!")
-    
+ #200 status code means that the response was successful.   
     # Parse the HTML content using BeautifulSoup
     soup = BeautifulSoup(response.content, 'html.parser')
     
